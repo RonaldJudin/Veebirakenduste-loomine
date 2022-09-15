@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="res/images/favicon.ico">
+    <title>My Dashboard</title>
+</head>
+<body>
+<header>
+    <strong>Welcome to your dashboard!</strong>
+</header>
+<section>
+    <div>
+        <img src="res/images/me.png" width="128" height="128" alt="My picture" title="This is a placeholder for my picture.">
+    </div>
+    <div>
+        <ul>
+            <li><a href="mailto:ronald.judin@ut.ee"> Ronald Judin</a></li>
+            <li> 15/09/2022</li>
+            <li> Software Engineering </li>
+        </ul>
+    </div>
+    <div>
+        <strong>2.65</strong>
+    </div>
+</section>
+<section>
+    <h1>Courses</h1>
+    <table>
+        <thead>
+        <tr>
+            <th>#</th>
+            <th>Course Title</th>
+            <th>Semester</th>
+            <th>Grade</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>1</td>
+            <td>
+		<a href="https://courses.cs.ut.ee/2022/ASD/fall" target="_blank" title="Courses page">Agile software development</a>
+	    </td>
+            <td>autumn</td>
+            <td>82</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>
+		<a href="https://courses.cs.ut.ee/2022/systemsmodelling/fall" target="_blank" title="Courses page">Systems modelling</a>
+	    </td>
+            <td>autumn</td>
+            <td>85</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>
+		<a href="https://courses.cs.ut.ee/2022/RE/fall" target="_blank" title="Courses page">Requirements Engineering</a>
+	    </td>
+            <td>autumn</td>
+            <td>99</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>
+		<a href="https://courses.cs.ut.ee/2022/HCI/fall" target="_blank" title="Courses page">Human Computer Interaction</a>
+	    </td>
+            <td>autumn</td>
+            <td>65</td>
+        </tr>
+        </tbody>
+	<tfoot>
+	<tr>
+            <th>#</th>
+            <th>Course Title</th>
+            <th>Semester</th>
+            <th>Grade</th>
+	</tr>
+	</tfoot>
+    </table>
+</section>
+<section>
+    <form>
+	<label for="nimi">Course Title:</label><br>
+	<input type="text" id="nimi" name="nimi"><br>
+	<label for="poolaasta">Semester:</label><br>
+	<select id="poolaasta" name="poolaasta">
+	    <option value="Autumn">Autumn</option>
+	    <option value="Spring">Spring</option>
+	</select><br>
+	<strong>Attendance:</strong><br>
+	<input type="radio" id="füüsiline" name="kohalkäimine" value="Physical attendance">
+  	<label for="füüsiline">Physical attendance</label><br>
+ 	<input type="radio" id="virtuaalne" name="kohalkäimine" value="Virtual attendance">
+ 	<label for="virtuaalne">Virtual attendance</label><br>
+	<input type="submit" title="Add course to list">
+    </form>
+</section>
+<footer>
+    <ul>
+        <li>
+            <a href="https://ois2.ut.ee/" target="_blank">ÕIS</a>
+        </li>
+        <li>
+            <a href="https://courses.cs.ut.ee/" target="_blank">Courses</a>
+        </li>
+    </ul>
+</footer>
+</body>
+</html>
